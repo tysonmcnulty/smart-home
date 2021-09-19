@@ -1,0 +1,6 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'com.example.fantasticswitches'
+version = '1.0.0'

@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example.superhomes'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.example.amazingbulbs:bulb-9000'
+    implementation 'com.example.fantasticswitches:switch-9000'
+}
+
+application {
+    mainClass = 'com.example.superhomes.SmartHome'
+}

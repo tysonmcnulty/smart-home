@@ -1,0 +1,2 @@
+includeBuild '../bulb-9000'
+includeBuild '../switch-9000'

@@ -1,0 +1,5 @@
+rootProject.name = 'umbrella'
+
+includeBuild 'smart-home'
+includeBuild 'bulb-9000'
+includeBuild 'switch-9000'
