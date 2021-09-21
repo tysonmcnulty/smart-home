@@ -1,7 +1,7 @@
 package com.example.superhomes;
 
 public class SmartHome {
-    public static void main(String... args) {
+    public static void main(String[] args) {
 
     }
 }
