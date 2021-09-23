@@ -1,4 +1,4 @@
-package com.example.amazingbulbs;
+package com.example.superhomes;
 
 public interface Operable {
     void turnOn();

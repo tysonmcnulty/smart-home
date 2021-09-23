@@ -6,4 +6,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 group = 'com.example.fantasticswitches'
-version = '1.0.0'
+
+dependencies {
+    implementation 'com.example.superhomes:smart-home'
+}

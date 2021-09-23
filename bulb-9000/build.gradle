@@ -6,3 +6,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 group = 'com.example.amazingbulbs'
+
+dependencies {
+    implementation 'com.example.superhomes:smart-home'
+}
