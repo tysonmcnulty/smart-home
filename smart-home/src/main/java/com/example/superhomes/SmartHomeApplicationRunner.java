@@ -7,21 +7,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class SmartHomeApplicationRunner implements ApplicationRunner {
 
+    private final Operable operable;
+
+    public SmartHomeApplicationRunner(Operable operable) {
+
+        this.operable = operable;
+    }
+
     @Override
     public void run(ApplicationArguments args) {
         System.out.println("**** Smart Home ****");
 
-        Operable theBulb = new Operable() {
-            @Override
-            public void turnOn() {
-                System.out.println("the bulb is ON!");
-            }
-
-            @Override
-            public void turnOff() {
-                System.out.println("the bulb is OFF!");
-            }
-        };
         Switchable theSwitch = new Switchable() {
             @Override
             public boolean isOn() {
@@ -30,9 +26,9 @@ public class SmartHomeApplicationRunner implements ApplicationRunner {
         };
 
         if (theSwitch.isOn()) {
-            theBulb.turnOn();
+            operable.turnOn();
         } else {
-            theBulb.turnOff();
+            operable.turnOff();
         }
     }
 }
