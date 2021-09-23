@@ -1,6 +1,7 @@
 plugins {
     id 'java'
-    id 'application'
+    id 'org.springframework.boot' version '2.5.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -12,8 +13,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {}
-
-application {
-    mainClass = 'com.example.superhomes.SmartHome'
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
 }
