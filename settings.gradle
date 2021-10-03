@@ -1,5 +1,7 @@
 rootProject.name = 'umbrella'
 
-includeBuild 'smart-home'
-includeBuild 'bulb-9000'
-includeBuild 'switch-9000'
+apply from: './settings-shared.gradle'
+
+smartHomeSubprojects.forEach { it ->
+    includeBuild it
+}

@@ -1,0 +1,19 @@
+ext {
+    smartHomeSubprojects = [
+        'bulb-9000',
+        'smart-home',
+        'switch-9000'
+    ]
+
+    otherSmartHomeSubprojects = {
+        smartHomeSubprojects.findAll {
+            it != rootProject.name
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}

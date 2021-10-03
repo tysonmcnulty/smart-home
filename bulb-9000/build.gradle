@@ -22,6 +22,6 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'com.example.superhomes:smart-home'
+    implementation 'org.springframework.boot:spring-boot-starter:2.5.5'
+    compileOnly 'com.example.superhomes:smart-home'
 }

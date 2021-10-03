@@ -11,10 +11,6 @@ targetCompatibility = JavaVersion.VERSION_1_8
 
 group = 'com.example.fantasticswitches'
 
-repositories {
-    mavenCentral()
-}
-
 dependencyManagement {
     imports {
         mavenBom SpringBootPlugin.BOM_COORDINATES
@@ -23,5 +19,5 @@ dependencyManagement {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'com.example.superhomes:smart-home'
+    compileOnly 'com.example.superhomes:smart-home'
 }

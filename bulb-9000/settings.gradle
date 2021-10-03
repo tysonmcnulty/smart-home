@@ -1,1 +1,7 @@
-includeBuild '../smart-home'
+rootProject.name = 'bulb-9000'
+
+apply from: '../settings-shared.gradle'
+
+otherSmartHomeSubprojects().forEach {
+    includeBuild "../$it"
+}
