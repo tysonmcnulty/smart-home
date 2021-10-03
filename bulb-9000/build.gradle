@@ -1,27 +1,15 @@
 import org.springframework.boot.gradle.plugin.SpringBootPlugin
 
 plugins {
+    id 'smart-home-common'
     id 'java-library'
     id 'org.springframework.boot' version '2.5.5' apply false
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
-
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
 
 group = 'com.example.amazingbulbs'
 
-repositories {
-    mavenCentral()
-}
-
-dependencyManagement {
-    imports {
-        mavenBom SpringBootPlugin.BOM_COORDINATES
-    }
-}
-
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter:2.5.5'
+    implementation platform(SpringBootPlugin.BOM_COORDINATES)
+    implementation 'org.springframework.boot:spring-boot-starter'
     compileOnly 'com.example.superhomes:smart-home'
 }

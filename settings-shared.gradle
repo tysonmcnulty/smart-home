@@ -1,6 +1,7 @@
 ext {
     smartHomeSubprojects = [
         'bulb-9000',
+        'gradle-plugins',
         'smart-home',
         'switch-9000'
     ]
