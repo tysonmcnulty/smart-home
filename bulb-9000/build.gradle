@@ -1,15 +1,11 @@
-import org.springframework.boot.gradle.plugin.SpringBootPlugin
-
 plugins {
-    id 'smart-home-common'
+    id 'common'
     id 'java-library'
-    id 'org.springframework.boot' version '2.5.5' apply false
 }
 
 group = 'com.example.amazingbulbs'
 
 dependencies {
-    implementation platform(SpringBootPlugin.BOM_COORDINATES)
     implementation 'org.springframework.boot:spring-boot-starter'
     compileOnly 'com.example.superhomes:smart-home'
 }
